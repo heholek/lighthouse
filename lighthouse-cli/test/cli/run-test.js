@@ -92,7 +92,7 @@ describe('CLI run', function() {
 describe('flag coercing', () => {
   it('should force to array', () => {
     assert.deepStrictEqual(
-      getFlags('https://www.example.com --only-audits foo chrome://version').onlyAudits, ['foo']);
+      getFlags('https://www.example.com --only-audits foo').onlyAudits, ['foo']);
   });
 
   it('should allow csv', () => {
